@@ -11,11 +11,14 @@
  * @param timeOutMillis the max amount of time to wait. If not specified, 3 sec is used.
  */
 function waitFor(testFx, onReady, timeOutMillis) {
-    var maxtimeOutMillis = timeOutMillis ? timeOutMillis : 10000, //< Default Max Timout is 3s
+    var maxtimeOutMillis = timeOutMillis ? timeOutMillis : 30000, //< Default Max Timout is 3s
         start = new Date().getTime(),
         condition = false,
         interval = setInterval(function() {
+		console.log(condition);
             if ( (new Date().getTime() - start < maxtimeOutMillis) && !condition ) {
+		console.log('cur ms: ' + (new Date().getTime() - start));
+		console.log('max ms: ' + maxtimeOutMillis);
                 // If not time-out yet and condition not yet fulfilled
                 condition = (typeof(testFx) === "string" ? eval(testFx) : testFx()); //< defensive code
             } else {
@@ -47,18 +50,12 @@ page.onLoadStarted = function() {
 	console.log('page.onLoadStarted');
 }
 page.onLoadFinished = function() {
-//	clickSelector();
 	console.log('page load finished');
 }
 
-function evalClickSelector(){
-	var li = $("li[data-state-id='United States']")[0];
-	return (li && (typeof li.click == "function"));
-}
 
-function hasClickSelector(){
+function hasBrewerySearchFunction(){
 	return page.evaluate(function() { 
-		//var li = $("li[data-state-id='United States']")[0];
 		if (typeof(get_breweries) === "function"){
 			console.log('get_breweries found');
 			get_breweries('country', 'United States');
@@ -71,50 +68,27 @@ function hasClickSelector(){
 	});
 }
 
-function clickSelector() {
-	var cs = page.evaluate(function() {
-		return $("li[data-state-id='United States']")[0].innerText;
+function resultsReturn(){
+	return page.evaluate(function() {
+		console.log('checking on status-bar');
+		return $("#status-bar").is(":visible");
 	});
-	console.log(cs);
 }
+
 page.open('https://www.brewersassociation.org/directories/breweries/', function(status) {
 	console.log('opening page...\n');
 	console.log("Status: " + status);
 	if (status === "success"){
-		/*page.includeJs("http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function() {
-			console.log('including jquery...\n');
-            		page.evaluate(function() {
-                		console.log('evaluating...\n');
-				console.log("$(\".entry-title\").text() -> " + $(".entry-title").text());
-          		});
-		});*/
-
-//		page.includeJs('
-/*		var clicked = page.evaluate(function() {
- 				return document.querySelectorAll("li[data-state-id='United States']")[0]; 
-				/*if (el && el.click && el.click())
-					return true;
-				else
-					return false;*/
-//			}		
-//		);
-//		console.log('clicked: ' + clicked);
-//		if (clicked){
-//			console.log('clicked');
-			waitFor(hasClickSelector, 
-				function(){ 
-					console.log('wait over');
-				}
-			);
-//		}
-/*		var title = page.evaluate(function() {
-			return document.getElementsByClassName('entry-title');
-		});*/
-//		console.log('entry title: ' + title.textContent);
+		hasBrewerySearchFunction();
+		waitFor(resultsReturn, 
+			function(){ 
+				console.log('wait over');
+			}
+		);
 	}
 	 setTimeout(function(){
          	phantom.exit();
-         }, 1000);
+         }, 30000);
 
 });
         
