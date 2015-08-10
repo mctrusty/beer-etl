@@ -1,0 +1,225 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'phantomjs' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'phantomjs', null ]
+6 verbose cache add name=undefined spec="phantomjs" args=["phantomjs",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'phantomjs',
+7 verbose parsed url   path: 'phantomjs',
+7 verbose parsed url   href: 'phantomjs' }
+8 silly lockFile 30d7cd7d-phantomjs phantomjs
+9 verbose lock phantomjs /home/michael/.npm/30d7cd7d-phantomjs.lock
+10 silly lockFile 30d7cd7d-phantomjs phantomjs
+11 silly lockFile 30d7cd7d-phantomjs phantomjs
+12 verbose addNamed [ 'phantomjs', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 29cf7fd6-phantomjs phantomjs@
+15 verbose lock phantomjs@ /home/michael/.npm/29cf7fd6-phantomjs.lock
+16 silly addNameRange { name: 'phantomjs', range: '*', hasData: false }
+17 verbose request where is /phantomjs
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id f7949c930a2ae8ff
+20 verbose url raw /phantomjs
+21 verbose url resolving [ 'https://registry.npmjs.org/', './phantomjs' ]
+22 verbose url resolved https://registry.npmjs.org/phantomjs
+23 verbose request where is https://registry.npmjs.org/phantomjs
+24 info trying registry request attempt 1 at 11:27:23
+25 http GET https://registry.npmjs.org/phantomjs
+26 http 200 https://registry.npmjs.org/phantomjs
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"C5YAVHAUO37R2EH5FQB3X88YB"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '97212',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Sun, 09 Aug 2015 17:27:35 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '28',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-lax1435-LAX',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1439141255.591005,VS0,VE0',
+27 silly registry.get     vary: 'Accept' } ]
+28 silly addNameRange number 2 { name: 'phantomjs', range: '*', hasData: true }
+29 silly addNameRange versions [ 'phantomjs',
+29 silly addNameRange   [ '0.0.1',
+29 silly addNameRange     '0.0.2',
+29 silly addNameRange     '0.0.3',
+29 silly addNameRange     '0.0.4',
+29 silly addNameRange     '0.0.5',
+29 silly addNameRange     '0.0.6',
+29 silly addNameRange     '0.0.7',
+29 silly addNameRange     '0.0.8',
+29 silly addNameRange     '0.0.9',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.2',
+29 silly addNameRange     '0.2.3',
+29 silly addNameRange     '0.2.4',
+29 silly addNameRange     '0.2.5',
+29 silly addNameRange     '0.2.6',
+29 silly addNameRange     '1.8.0-1',
+29 silly addNameRange     '1.8.1-1',
+29 silly addNameRange     '1.8.1-2',
+29 silly addNameRange     '1.8.1-3',
+29 silly addNameRange     '1.8.2-0',
+29 silly addNameRange     '1.8.2-1',
+29 silly addNameRange     '1.8.2-2',
+29 silly addNameRange     '1.9.0-0',
+29 silly addNameRange     '1.9.0-1',
+29 silly addNameRange     '1.9.0-2',
+29 silly addNameRange     '1.9.0-3',
+29 silly addNameRange     '1.9.0-4',
+29 silly addNameRange     '1.9.0-5',
+29 silly addNameRange     '1.9.0-6',
+29 silly addNameRange     '1.9.1-0',
+29 silly addNameRange     '1.9.1-2',
+29 silly addNameRange     '1.9.1-3',
+29 silly addNameRange     '1.9.1-4',
+29 silly addNameRange     '1.9.1-5',
+29 silly addNameRange     '1.9.1-6',
+29 silly addNameRange     '1.9.1-7',
+29 silly addNameRange     '1.9.1-8',
+29 silly addNameRange     '1.9.1-9',
+29 silly addNameRange     '1.9.2-0',
+29 silly addNameRange     '1.9.2-1',
+29 silly addNameRange     '1.9.2-2',
+29 silly addNameRange     '1.9.2-3',
+29 silly addNameRange     '1.9.2-4',
+29 silly addNameRange     '1.9.2-5',
+29 silly addNameRange     '1.9.2-6',
+29 silly addNameRange     '1.9.6-0',
+29 silly addNameRange     '1.9.7-1',
+29 silly addNameRange     '1.9.7-3',
+29 silly addNameRange     '1.9.7-4',
+29 silly addNameRange     '1.9.7-5',
+29 silly addNameRange     '1.9.7-6',
+29 silly addNameRange     '1.9.7-7',
+29 silly addNameRange     '1.9.7-8',
+29 silly addNameRange     '1.9.7-9',
+29 silly addNameRange     '1.9.7-10',
+29 silly addNameRange     '1.9.7-11',
+29 silly addNameRange     '1.9.7-12',
+29 silly addNameRange     '1.9.7-13',
+29 silly addNameRange     '1.9.7-14',
+29 silly addNameRange     '1.9.7-15',
+29 silly addNameRange     '1.8.2-3',
+29 silly addNameRange     '1.9.8',
+29 silly addNameRange     '1.9.9',
+29 silly addNameRange     '1.9.10',
+29 silly addNameRange     '1.9.11',
+29 silly addNameRange     '1.9.12',
+29 silly addNameRange     '1.9.13',
+29 silly addNameRange     '1.9.15',
+29 silly addNameRange     '1.9.16',
+29 silly addNameRange     '1.9.17' ] ]
+30 verbose addNamed [ 'phantomjs', '1.9.17' ]
+31 verbose addNamed [ '1.9.17', '1.9.17' ]
+32 silly lockFile a8c5e632-phantomjs-1-9-17 phantomjs@1.9.17
+33 verbose lock phantomjs@1.9.17 /home/michael/.npm/a8c5e632-phantomjs-1-9-17.lock
+34 silly lockFile a479fef7-g-phantomjs-phantomjs-1-9-17-tgz https://registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz
+35 verbose lock https://registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz /home/michael/.npm/a479fef7-g-phantomjs-phantomjs-1-9-17-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz',
+36 verbose addRemoteTarball   '80e18e6a6270230456197e8a23416e687140cdc0' ]
+37 info retry fetch attempt 1 at 11:27:24
+38 verbose fetch to= /tmp/npm-22753-UCxkhgso/registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz
+39 http GET https://registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz
+40 http 200 https://registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz
+41 silly lockFile a479fef7-g-phantomjs-phantomjs-1-9-17-tgz https://registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz
+42 silly lockFile a479fef7-g-phantomjs-phantomjs-1-9-17-tgz https://registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz
+43 silly lockFile a8c5e632-phantomjs-1-9-17 phantomjs@1.9.17
+44 silly lockFile a8c5e632-phantomjs-1-9-17 phantomjs@1.9.17
+45 silly lockFile 29cf7fd6-phantomjs phantomjs@
+46 silly lockFile 29cf7fd6-phantomjs phantomjs@
+47 silly resolved [ { name: 'phantomjs',
+47 silly resolved     version: '1.9.17',
+47 silly resolved     keywords: [ 'phantomjs', 'headless', 'webkit' ],
+47 silly resolved     description: 'Headless WebKit with JS API',
+47 silly resolved     homepage: 'https://github.com/Medium/phantomjs',
+47 silly resolved     repository: { type: 'git', url: 'git://github.com/Medium/phantomjs.git' },
+47 silly resolved     licenses: [ [Object] ],
+47 silly resolved     author:
+47 silly resolved      { name: 'Dan Pupius',
+47 silly resolved        email: 'dan@obvious.com',
+47 silly resolved        url: 'http://pupius.co.uk' },
+47 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+47 silly resolved     main: 'lib/phantomjs',
+47 silly resolved     bin: { phantomjs: './bin/phantomjs' },
+47 silly resolved     scripts:
+47 silly resolved      { install: 'node install.js',
+47 silly resolved        test: 'nodeunit --reporter=minimal test/tests.js' },
+47 silly resolved     dependencies:
+47 silly resolved      { 'adm-zip': '0.4.4',
+47 silly resolved        'fs-extra': '~0.18',
+47 silly resolved        kew: '0.4.0',
+47 silly resolved        npmconf: '2.1.1',
+47 silly resolved        progress: '1.1.8',
+47 silly resolved        request: '2.42.0',
+47 silly resolved        'request-progress': '0.3.1',
+47 silly resolved        which: '~1.0.5' },
+47 silly resolved     devDependencies: { nodeunit: '0.9.0' },
+47 silly resolved     gitHead: '0d8bea7405694884717c59a286252a81c9f11d90',
+47 silly resolved     bugs: { url: 'https://github.com/Medium/phantomjs/issues' },
+47 silly resolved     _id: 'phantomjs@1.9.17',
+47 silly resolved     _shasum: '80e18e6a6270230456197e8a23416e687140cdc0',
+47 silly resolved     _from: 'phantomjs@',
+47 silly resolved     _npmVersion: '2.5.1',
+47 silly resolved     _nodeVersion: '0.12.0',
+47 silly resolved     _npmUser: { name: 'nicks', email: 'nicholas.j.santos@gmail.com' },
+47 silly resolved     dist:
+47 silly resolved      { shasum: '80e18e6a6270230456197e8a23416e687140cdc0',
+47 silly resolved        tarball: 'http://registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz' },
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/phantomjs/-/phantomjs-1.9.17.tgz' } ]
+48 info install phantomjs@1.9.17 into /usr/lib
+49 info installOne phantomjs@1.9.17
+50 verbose lib/node_modules/phantomjs unbuild
+51 verbose tar unpack /home/michael/.npm/phantomjs/1.9.17/package.tgz
+52 silly lockFile ce07c23f-r-usr-lib-node-modules-phantomjs tar:///usr/lib/node_modules/phantomjs
+53 verbose lock tar:///usr/lib/node_modules/phantomjs /home/michael/.npm/ce07c23f-r-usr-lib-node-modules-phantomjs.lock
+54 silly lockFile 0148b16e-npm-phantomjs-1-9-17-package-tgz tar:///home/michael/.npm/phantomjs/1.9.17/package.tgz
+55 verbose lock tar:///home/michael/.npm/phantomjs/1.9.17/package.tgz /home/michael/.npm/0148b16e-npm-phantomjs-1-9-17-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 error Error: EACCES, mkdir '/usr/lib/node_modules/phantomjs'
+57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/phantomjs']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/lib/node_modules/phantomjs',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/lib/node_modules/phantomjs',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:108:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Linux 3.13.0-37-generic
+60 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "phantomjs"
+61 error cwd /home/michael/etl/beers
+62 error node -v v0.10.38
+63 error npm -v 1.4.28
+64 error path /usr/lib/node_modules/phantomjs
+65 error fstream_path /usr/lib/node_modules/phantomjs
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/phantomjs'
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:108:15)
+72 verbose exit [ 3, true ]
