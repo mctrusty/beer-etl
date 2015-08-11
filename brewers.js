@@ -83,6 +83,16 @@ page.open('https://www.brewersassociation.org/directories/breweries/', function(
 		waitFor(resultsReturn, 
 			function(){ 
 				console.log('wait over');
+				var results = page.evaluate(function() {
+					var brewers = document.querySelectorAll('ul.vcard'), brewerlist = [], i;
+					for (i=0; i<brewers.length; i++){
+						brewerlist.push(brewers[i].outerHTML);
+					}
+					return brewerlist;
+				});
+				console.log('num results: ' + results.length);
+				for (i=0; i<results.length; i+=2)
+				{ console.log(i); console.log(results[i]);}
 			}
 		);
 	}
