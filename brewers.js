@@ -40,6 +40,7 @@ function waitFor(testFx, onReady, timeOutMillis) {
 * Begin the page parsing work.
 */
 var page = require('webpage').create();		
+var fs = require('fs');
 
 page.onConsoleMessage = function(msg) { console.log(msg); }
 
@@ -90,9 +91,10 @@ page.open('https://www.brewersassociation.org/directories/breweries/', function(
 					}
 					return brewerlist;
 				});
-				console.log('num results: ' + results.length);
-				for (i=0; i<results.length; i+=2)
-				{ console.log(i); console.log(results[i]);}
+				//console.log('num results: ' + results.length);
+				//for (i=0; i<results.length; i+=2)
+				//{ console.log(i); console.log(results[i]);}
+				fs.write('brewers', results.join('\n'), 'w');
 			}
 		);
 	}
